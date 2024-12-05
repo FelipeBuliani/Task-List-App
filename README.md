@@ -39,5 +39,5 @@ ng serve
 ## Rodando os testes unitários
 Execute o comando para rodar os testes unitários:
 ```bash
-ng test
+ng test --watch=true
 ```
