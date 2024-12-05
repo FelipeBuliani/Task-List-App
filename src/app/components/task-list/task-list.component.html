@@ -1,0 +1,22 @@
+<mat-card class="content">
+  <div class="add-button">
+    <button mat-raised-button color="primary" (click)="addTask()">Adicionar</button>
+  </div>
+
+  <mat-list>
+    <mat-list-item *ngFor="let task of tasks">
+      <mat-card appearance="outlined">
+        <div class="task-item">
+          <mat-checkbox
+            [checked]="task.completed"
+            (change)="toggleCompletion(task.id)">
+          </mat-checkbox>
+          <span>{{ task.title }}</span>
+          <button mat-icon-button color="warn" (click)="deleteTask(task.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </mat-card>
+    </mat-list-item>
+  </mat-list>
+</mat-card>

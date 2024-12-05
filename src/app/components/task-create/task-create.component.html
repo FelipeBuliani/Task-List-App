@@ -1,0 +1,27 @@
+<mat-card>
+  <form #taskForm="ngForm" (ngSubmit)="addTask(taskForm)" class="form">
+    <mat-form-field class="full-width">
+      <input
+        matInput
+        placeholder="Nova tarefa"
+        name="taskTitle"
+        [(ngModel)]="newTaskTitle"
+        required
+        minlength="3"
+        #taskTitle="ngModel"
+      />
+      <mat-error *ngIf="taskTitle.errors?.['required']">
+        O título da tarefa é obrigatório.
+      </mat-error>
+      <mat-error *ngIf="taskTitle.errors?.['minlength']">
+        O título deve ter pelo menos 3 caracteres.
+      </mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="taskForm.invalid">
+      Salvar
+    </button>
+    <button mat-raised-button color="danger" (click)="cancel()" class="ml-4 mt-4">
+      Cancelar
+    </button>
+  </form>
+</mat-card>
