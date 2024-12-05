@@ -24,7 +24,7 @@ Se ainda não tem o Angular CLI instalado, instale-o globalmente com:
 npm install -g @angular/cli
 ```
 
-## Instalando as dependencias
+## Instalando as dependências
 Execute o comando para instalar as dependências:
 ```bash
 npm install
