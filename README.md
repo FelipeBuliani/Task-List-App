@@ -21,17 +21,17 @@ Antes de rodar a aplicação, certifique-se de ter as seguintes versões instala
 Se ainda não tem o Angular CLI instalado, instale-o globalmente com:
 
 ```bash
-npm install -g @angular/cli
+npm install -g @angular/cli```
 
 ## Instalando as dependencias
 Execute o comando para instalar as dependências:
-'''bash
-npm install
+```bash
+npm install```
 
 ## Executando o projeto
 Execute o comando para iniciar a aplicação:
-'''bash
-ng serve
+```bash
+ng serve```
 
 ## Rodando os testes unitários
 Execute o comando para rodar os testes unitários:
